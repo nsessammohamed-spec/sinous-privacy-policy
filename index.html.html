@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — SINOUS | سياسة الخصوصية</title>
+<meta name="description" content="Privacy Policy of the SINOUS Chinese-learning app. سياسة الخصوصية لتطبيق SINOUS لتعلّم اللغة الصينية.">
+<style>
+
+  @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap');
+
+  :root {
+    --bg: #f3f5f7;
+    --surface: #ffffff;
+    --ink: #1c2938;
+    --muted: #687789;
+    --line: #e5e9ee;
+    --accent: #b58b58;
+    --accent-deep: #8b653d;
+    --band: #14283b;
+    --band-2: #203b50;
+    --band-ink: #ffffff;
+    --note: #f7f1e8;
+    --shadow: 0 16px 42px rgba(23, 39, 56, .065);
+    color-scheme: light;
+  }
+
+  * { box-sizing: border-box; }
+  html { scroll-padding-top: 24px; scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background:
+      radial-gradient(ellipse at 92% 2%, rgba(181,139,88,.10), transparent 28rem),
+      linear-gradient(180deg, #f7f8f9 0%, var(--bg) 100%);
+    color: var(--ink);
+    font-family: "DM Sans", "IBM Plex Sans Arabic", system-ui, sans-serif;
+    font-size: 16px;
+    line-height: 1.82;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+  :lang(ar), #ar {
+    font-family: "IBM Plex Sans Arabic", Tahoma, Arial, sans-serif;
+    font-size: 16.5px;
+    line-height: 2;
+  }
+  .wrap { width: min(100% - 48px, 960px); margin: 0 auto; }
+
+  .bar {
+    position: relative; z-index: 5;
+    background: rgba(20,40,59,.98); color: var(--band-ink);
+    border-bottom: 1px solid rgba(255,255,255,.08);
+  }
+  .bar .wrap {
+    min-height: 68px; display: flex; align-items: center;
+    justify-content: space-between; gap: 16px; padding-top: 12px; padding-bottom: 12px;
+  }
+  .mark {
+    display: inline-flex; align-items: center; gap: 11px;
+    font-weight: 800; font-size: 1.16rem; letter-spacing: .2em; direction: ltr;
+  }
+  .mark::before {
+    content: ""; width: 9px; height: 9px; border-radius: 3px;
+    background: var(--accent); transform: rotate(45deg);
+    box-shadow: 0 0 0 5px rgba(181,139,88,.13);
+  }
+  .toggle {
+    display: none; align-items: center; gap: 4px; padding: 4px;
+    border: 1px solid rgba(255,255,255,.16); border-radius: 999px;
+    background: rgba(255,255,255,.07);
+  }
+  html.js .toggle { display: flex; }
+  .toggle button {
+    appearance: none; border: 0; cursor: pointer; font: inherit;
+    font-size: .83rem; font-weight: 700; padding: 7px 16px;
+    border-radius: 999px; background: transparent; color: rgba(255,255,255,.76);
+    transition: .2s ease;
+  }
+  .toggle button:hover { color: #fff; }
+  .toggle button[aria-pressed="true"] {
+    color: var(--band); background: #fff; box-shadow: 0 2px 8px rgba(0,0,0,.12);
+  }
+
+  .hero {
+    position: relative; isolation: isolate; overflow: hidden;
+    padding: 76px 0 88px; color: var(--band-ink);
+    background: linear-gradient(116deg, var(--band) 0%, #1b3449 58%, var(--band-2) 100%);
+  }
+  .hero::before {
+    content: ""; position: absolute; z-index: -1; pointer-events: none;
+    width: 470px; height: 470px; inset-inline-end: -170px; top: -285px;
+    border: 1px solid rgba(255,255,255,.11); border-radius: 50%;
+    box-shadow: 0 0 0 35px rgba(255,255,255,.025), 0 0 0 78px rgba(255,255,255,.018), 0 0 0 125px rgba(255,255,255,.012);
+  }
+  .hero::after {
+    content: "S"; position: absolute; z-index: -1; inset-inline-start: 4%;
+    bottom: -115px; font-size: 23rem; line-height: 1; font-weight: 800;
+    color: rgba(255,255,255,.025); pointer-events: none;
+  }
+  .hero .wrap { position: relative; }
+  h1 {
+    margin: 0 0 20px; max-width: 780px;
+    font-size: clamp(2.7rem, 6.5vw, 4.45rem); line-height: 1.08;
+    font-weight: 800; letter-spacing: -.055em;
+  }
+  #ar h1 { letter-spacing: 0; line-height: 1.35; }
+  .lede {
+    margin: 0 0 23px; max-width: 73ch;
+    color: rgba(255,255,255,.84); font-size: 1.04rem; line-height: 1.95;
+  }
+  .meta {
+    display: inline-flex; align-items: center; gap: 9px;
+    margin: 5px 0 0; padding: 8px 14px;
+    border: 1px solid rgba(255,255,255,.18); border-radius: 999px;
+    background: rgba(255,255,255,.07); color: rgba(255,255,255,.8);
+    font-size: .84rem; font-weight: 500;
+  }
+  .meta::before { content: ""; width: 6px; height: 6px; border-radius: 50%; background: var(--accent); }
+
+  main section, main nav, .glance { margin-top: 26px; }
+  .glance {
+    position: relative; z-index: 2; margin-top: -34px;
+    padding: 28px 31px; border: 1px solid rgba(229,233,238,.9);
+    border-radius: 19px; background: var(--surface); box-shadow: var(--shadow);
+  }
+  .glance h2 {
+    display: block; border: 0; padding: 0; margin: 0 0 15px;
+    font-size: 1.14rem; letter-spacing: -.015em;
+  }
+  .glance h2::before { display: none; }
+  .glance ul {
+    display: grid; grid-template-columns: repeat(2,minmax(0,1fr));
+    gap: 12px 26px; margin: 0; padding: 0; list-style: none;
+  }
+  .glance li {
+    position: relative; margin: 0; padding-inline-start: 29px;
+    color: var(--muted); font-size: .94rem; line-height: 1.75;
+  }
+  .glance li::before {
+    content: "✓"; position: absolute; inset-inline-start: 0; top: 2px;
+    display: grid; place-items: center; width: 19px; height: 19px;
+    border-radius: 6px; background: var(--note); color: var(--accent-deep);
+    font-size: .72rem; font-weight: 900;
+  }
+
+  nav {
+    padding: 25px 29px 27px; border: 1px solid var(--line);
+    border-radius: 17px; background: rgba(255,255,255,.72);
+  }
+  nav h2 {
+    display: block; margin: 0 0 13px; padding: 0; border: 0;
+    color: var(--muted); font-size: .78rem; font-weight: 800;
+    text-transform: uppercase; letter-spacing: .13em;
+  }
+  nav h2::before { display: none; }
+  nav ul { margin: 0; padding: 0; list-style: none; columns: 2 280px; column-gap: 35px; }
+  nav li { break-inside: avoid; margin: 3px 0; }
+  nav a {
+    display: block; padding: 6px 10px; border-radius: 8px;
+    color: var(--ink); text-decoration: none; font-size: .91rem;
+    transition: background .18s ease, color .18s ease, padding .18s ease;
+  }
+  nav a:hover { background: var(--note); color: var(--accent-deep); padding-inline-start: 14px; }
+  a { color: var(--accent-deep); text-underline-offset: 3px; }
+  a:hover { color: #6f4d2d; }
+  a:focus-visible, button:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; border-radius: 5px; }
+
+  main section {
+    padding: 31px 34px 33px; background: var(--surface);
+    border: 1px solid var(--line); border-radius: 18px;
+    box-shadow: 0 7px 25px rgba(23,39,56,.035);
+    scroll-margin-top: 22px;
+  }
+  main section h2 {
+    display: flex; align-items: center; gap: 13px;
+    margin: 0 0 19px; padding: 0; border: 0;
+    font-size: 1.3rem; line-height: 1.5; font-weight: 750;
+    letter-spacing: -.025em;
+  }
+  main section h2::before {
+    content: ""; display: block; flex: 0 0 4px; height: 29px;
+    border-radius: 5px; background: var(--accent);
+  }
+  #ar main section h2 { font-size: 1.27rem; letter-spacing: 0; }
+  p { margin: 11px 0; max-width: 78ch; }
+  ul.plain { margin: 13px 0 3px; padding-inline-start: 24px; max-width: 78ch; }
+  ul.plain li { margin: 8px 0; padding-inline-start: 3px; }
+  ul.plain li::marker { color: var(--accent); }
+
+  .tablewrap {
+    overflow-x: auto; margin: 18px 0 20px;
+    border: 1px solid var(--line); border-radius: 13px; background: #fff;
+  }
+  table { width: 100%; min-width: 560px; border-collapse: separate; border-spacing: 0; }
+  th, td {
+    text-align: start; vertical-align: top;
+    padding: 14px 16px; border-bottom: 1px solid var(--line);
+  }
+  th {
+    color: #526174; background: #f6f3ed;
+    font-size: .81rem; font-weight: 800; letter-spacing: .015em;
+  }
+  td { font-size: .91rem; line-height: 1.8; }
+  tbody tr:last-child td { border-bottom: 0; }
+  tbody tr:nth-child(even) { background: #fbfcfd; }
+  td.no { color: var(--accent-deep); font-weight: 800; white-space: nowrap; }
+
+  footer {
+    margin: 33px 0 58px; padding: 19px 0 0;
+    border-top: 1px solid var(--line); color: var(--muted);
+    font-size: .84rem; text-align: center;
+  }
+
+  html[data-lang="ar"] #en { display: none; }
+  html[data-lang="en"] #ar { display: none; }
+  #ar { font-size: 1.035rem; line-height: 2; }
+  #ar .lede { line-height: 2; }
+  #ar .glance li, #ar nav a, #ar td, #ar th { line-height: 1.9; }
+  #en + #ar { border-top: 0; margin-top: 40px; }
+  html[data-lang] #en + #ar { border-top: 0; margin-top: 0; }
+
+  @media (max-width: 680px) {
+    .wrap { width: min(100% - 30px, 960px); }
+    .bar .wrap { min-height: 60px; }
+    .hero { padding: 54px 0 68px; }
+    h1 { font-size: clamp(2.35rem, 10vw, 3.25rem); }
+    .lede { font-size: .96rem; }
+    .glance { padding: 22px 20px; border-radius: 16px; }
+    .glance ul { grid-template-columns: 1fr; gap: 10px; }
+    nav { padding: 21px 18px; }
+    nav ul { columns: 1; }
+    main section { padding: 24px 20px 26px; border-radius: 15px; }
+    main section h2 { font-size: 1.17rem; }
+    #ar main section h2 { font-size: 1.16rem; }
+    th, td { padding: 12px 13px; }
+  }
+  @media (max-width: 380px) {
+    .mark { font-size: 1.02rem; }
+    .toggle button { padding: 6px 11px; font-size: .78rem; }
+    .wrap { width: min(100% - 24px, 960px); }
+  }
+  @media print {
+    body { background: #fff; color: #111; }
+    .bar .toggle { display: none !important; }
+    .hero { background: none; color: #000; padding: 22px 0; }
+    .hero::before, .hero::after { display: none; }
+    .lede, .meta { color: #333; }
+    .glance, main section, nav { box-shadow: none; break-inside: avoid; }
+    main section, nav, .glance { border-color: #ccc; }
+  }
+
+</style>
+</head>
+<body>
+
+<div class="bar">
+  <div class="wrap">
+    <span class="mark">SINOUS</span>
+    <div class="toggle" role="group" aria-label="Language / اللغة">
+      <button type="button" data-set="en" aria-pressed="false">English</button>
+      <button type="button" data-set="ar" aria-pressed="false">العربية</button>
+    </div>
+  </div>
+</div>
+
+<!-- ============================== ENGLISH ============================== -->
+<main id="en" lang="en" dir="ltr">
+  <header class="hero">
+    <div class="wrap">
+      <h1>Privacy Policy</h1>
+      <p class="lede">This policy explains how the SINOUS app (“SINOUS” or “the app”) handles information. SINOUS is an educational app for learning Chinese. It was developed by Essam Mohamed, and its educational content is based on the work of Dr. Sondos Yasser. In this policy, “we” means the SINOUS developer and content team.</p>
+      <p class="meta">Last updated: November 9, 2026</p>
+    </div>
+  </header>
+
+  <div class="wrap">
+    <div class="glance">
+      <h2>At a glance</h2>
+      <ul>
+        <li>There is no SINOUS account, and we do not receive your learning data, photos or scans.</li>
+        <li>No ads, and no advertising or analytics tools of our own.</li>
+        <li>Your progress, saved words and scan history stay in the app’s private storage on your phone.</li>
+        <li>A few features connect to outside services (section 4), and you can delete everything the app stores at any time.</li>
+      </ul>
+    </div>
+
+    <nav aria-label="Contents">
+      <h2>Contents</h2>
+      <ul>
+        <li><a href="#en-s1">1. Information stored only on your device</a></li>
+        <li><a href="#en-s2">2. Camera, photos and Sondos Lens</a></li>
+        <li><a href="#en-s3">3. Notifications and restart</a></li>
+        <li><a href="#en-s4">4. Information that leaves your device</a></li>
+        <li><a href="#en-s5">5. What SINOUS does not do</a></li>
+        <li><a href="#en-s6">6. Your choices and deleting data</a></li>
+        <li><a href="#en-s7">7. Children</a></li>
+        <li><a href="#en-s8">8. Security</a></li>
+        <li><a href="#en-s9">9. Changes to this policy</a></li>
+        <li><a href="#en-s10">10. Contact</a></li>
+      </ul>
+    </nav>
+
+    <section id="en-s1">
+      <h2>1. Information stored only on your device</h2>
+      <div class="tablewrap">
+        <table>
+          <thead><tr><th>Information</th><th>Where it is kept</th><th>Leaves your device?</th></tr></thead>
+          <tbody>
+            <tr><td>Settings (language, theme, sounds, reminder times)</td><td>The app’s private storage</td><td class="no">No</td></tr>
+            <tr><td>Learning progress (lessons, points, stars, study days, statistics)</td><td>The app’s private storage</td><td class="no">No</td></tr>
+            <tr><td>Saved words, review and mistake lists, recent dictionary searches</td><td>The app’s private storage</td><td class="no">No</td></tr>
+            <tr><td>Sondos Lens scan history: a copy of the scanned image and the recognized text, for the latest 30 scans (older ones are deleted automatically)</td><td>The app’s private storage</td><td class="no">No</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>Other apps cannot read this storage, and we have no servers that receive it. If you uninstall the app or clear its data from your phone settings, this information is permanently removed and we cannot restore it.</p>
+    </section>
+
+    <section id="en-s2">
+      <h2>2. Camera, photos and Sondos Lens</h2>
+      <p>Sondos Lens scans Chinese text using the camera or a picture you choose from your gallery. The camera permission is requested only when you open the scanner. When you pick a picture from your gallery, the app reads only that picture and does not ask for access to your other photos.</p>
+      <p>Text recognition runs on your device using Google ML Kit, and the image is not sent to us. Please do not scan documents or pictures that contain personal or sensitive information about you or about others.</p>
+    </section>
+
+    <section id="en-s3">
+      <h2>3. Notifications and restart</h2>
+      <p>Study reminders are optional. They are scheduled on your device and do not come from a server. Notification permission is requested only when you turn a reminder on. The app listens for the phone-restart signal only to schedule your reminder again after a restart.</p>
+      <p>The app does not use the microphone and does not record audio. It does not access your location, contacts or messages.</p>
+    </section>
+
+    <section id="en-s4">
+      <h2>4. Information that leaves your device</h2>
+      <p>Most of the app works offline. These are the only cases in which something goes to an outside service:</p>
+      <div class="tablewrap">
+        <table>
+          <thead><tr><th>Service</th><th>When</th><th>What it may receive</th></tr></thead>
+          <tbody>
+            <tr>
+              <td>Google ML Kit (text recognition in Sondos Lens)</td>
+              <td>When you use the scanner</td>
+              <td>According to Google’s documentation, the library may send technical diagnostics and usage analytics to Google, such as device information (manufacturer, model, OS version), the app’s package name and version, performance metrics and error codes. Google states that this data is encrypted in transit and not transferred to third parties, and its documentation does not list your scanned images or recognized text among the data collected. We do not receive this data.</td>
+            </tr>
+            <tr>
+              <td>jsDelivr (a public content delivery network)</td>
+              <td>When you open character-writing practice</td>
+              <td>Like any internet request, the service may see your IP address and device type. The app sends it nothing about your progress, photos or saved words.</td>
+            </tr>
+            <tr>
+              <td>Google Play and Android crash reports</td>
+              <td>Only if you chose to share usage and diagnostic data on your device</td>
+              <td>Anonymous crash reports may be made available to us through Google Play Console.</td>
+            </tr>
+            <tr>
+              <td>Text-to-speech engine</td>
+              <td>When you listen to pronunciation</td>
+              <td>The app uses the engine installed on your phone, which is governed by its maker’s policy.</td>
+            </tr>
+            <tr>
+              <td>WhatsApp, Instagram, TikTok, Facebook, Behance</td>
+              <td>When you tap their links (including the books inquiry button)</td>
+              <td>The app opens the service outside the app. Its own terms and privacy policy apply to what you do there, including any message you send.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p>We do not sell your personal information, and we do not share it for advertising. For more about ML Kit, see <a href="https://developers.google.com/ml-kit/android-data-disclosure" rel="noopener noreferrer">Google’s ML Kit data disclosure</a>.</p>
+    </section>
+
+    <section id="en-s5">
+      <h2>5. What SINOUS does not do</h2>
+      <ul class="plain">
+        <li>It does not ask for your name, email address, phone number or age.</li>
+        <li>It does not show ads and does not use advertising or analytics tools of our own.</li>
+        <li>It does not track you across other apps or websites, and does not build a profile about you.</li>
+        <li>It does not sell data.</li>
+      </ul>
+    </section>
+
+    <section id="en-s6">
+      <h2>6. Your choices and deleting data</h2>
+      <p>In Settings › Privacy center you can delete your scan history, your recent searches, your saved words and mistake lists, or all learning data saved in the app (your language, theme and reminder settings are kept). You can turn off reminders in Settings, withdraw the camera or notification permission at any time in your phone settings, or uninstall the app.</p>
+      <p>Because your data is not with us, we cannot view, correct or delete it on your behalf. These tools act directly on the data on your phone. This version has no sign-in and no syncing between devices.</p>
+    </section>
+
+    <section id="en-s7">
+      <h2>7. Children</h2>
+      <p>SINOUS is not directed to children under 13 and does not knowingly collect personal information from any user. If you believe a child under 13 is using the app, please contact us.</p>
+    </section>
+
+    <section id="en-s8">
+      <h2>8. Security</h2>
+      <p>The app’s data is kept in its private storage and is excluded from Android’s automatic backups. The app’s internet connections use encrypted HTTPS, and unencrypted traffic is disabled. No system is completely secure, so we recommend locking your phone.</p>
+    </section>
+
+    <section id="en-s9">
+      <h2>9. Changes to this policy</h2>
+      <p>We may update this policy when the app’s features or its handling of data change. We will change the “Last updated” date at the top of this page and reflect material changes in the Privacy center inside the app.</p>
+    </section>
+
+    <section id="en-s10">
+      <h2>10. Contact</h2>
+      <p>For any privacy question, contact us through the links below. They are the same links shown in the app’s Settings page.</p>
+      <ul class="plain">
+        <li>Developer, Essam Mohamed:
+          <a href="https://wa.me/201055062124" rel="noopener noreferrer">WhatsApp</a>,
+          <a href="https://www.instagram.com/nsessammohamed/" rel="noopener noreferrer">Instagram</a>,
+          <a href="https://www.facebook.com/NSEsamMohamed/" rel="noopener noreferrer">Facebook</a>,
+          <a href="https://www.behance.net/NSEssamMohamed" rel="noopener noreferrer">Behance</a></li>
+        <li>Dr. Sondos Yasser:
+          <a href="https://www.instagram.com/sinous_chinese/" rel="noopener noreferrer">Instagram (@sinous_chinese)</a>,
+          <a href="https://www.tiktok.com/@sinous_chinese" rel="noopener noreferrer">TikTok</a></li>
+      </ul>
+      <p>Please do not send passwords or sensitive information through social media.</p>
+    </section>
+
+    <footer>SINOUS, version 1.0. Last updated: November 9, 2026.</footer>
+  </div>
+</main>
+
+<!-- ============================== العربية ============================== -->
+<main id="ar" lang="ar" dir="rtl">
+  <header class="hero">
+    <div class="wrap">
+      <h1>سياسة الخصوصية</h1>
+      <p class="lede">توضّح هذه السياسة كيف يتعامل تطبيق SINOUS («التطبيق») مع المعلومات. SINOUS تطبيق تعليمي لتعلّم اللغة الصينية، طوّره عصام محمد، ويقوم محتواه التعليمي على أعمال د. سندس ياسر. والمقصود بـ«نحن» في هذه السياسة: مطوّر التطبيق وفريق المحتوى.</p>
+      <p class="meta">آخر تحديث: 9 نوفمبر 2026</p>
+    </div>
+  </header>
+
+  <div class="wrap">
+    <div class="glance">
+      <h2>باختصار</h2>
+      <ul>
+        <li>لا يوجد حساب في SINOUS، ولا نستقبل بيانات تعلّمك ولا صورك ولا نتائج المسح.</li>
+        <li>لا إعلانات، ولا أدوات إعلانية أو تحليلية خاصة بنا.</li>
+        <li>يبقى تقدّمك وكلماتك المحفوظة وسجل المسح في التخزين الخاص بالتطبيق على هاتفك.</li>
+        <li>ترتبط بعض الميزات بخدمات خارجية (القسم 4)، ويمكنك حذف كل ما يخزّنه التطبيق في أي وقت.</li>
+      </ul>
+    </div>
+
+    <nav aria-label="المحتويات">
+      <h2>المحتويات</h2>
+      <ul>
+        <li><a href="#ar-s1">1. معلومات تُحفظ على جهازك فقط</a></li>
+        <li><a href="#ar-s2">2. الكاميرا والصور وعدسة سندس</a></li>
+        <li><a href="#ar-s3">3. الإشعارات وإعادة التشغيل</a></li>
+        <li><a href="#ar-s4">4. معلومات تغادر جهازك</a></li>
+        <li><a href="#ar-s5">5. ما لا يفعله SINOUS</a></li>
+        <li><a href="#ar-s6">6. خياراتك وحذف البيانات</a></li>
+        <li><a href="#ar-s7">7. الأطفال</a></li>
+        <li><a href="#ar-s8">8. الأمان</a></li>
+        <li><a href="#ar-s9">9. تعديل هذه السياسة</a></li>
+        <li><a href="#ar-s10">10. التواصل</a></li>
+      </ul>
+    </nav>
+
+    <section id="ar-s1">
+      <h2>1. معلومات تُحفظ على جهازك فقط</h2>
+      <div class="tablewrap">
+        <table>
+          <thead><tr><th>المعلومة</th><th>مكان الحفظ</th><th>هل تغادر جهازك؟</th></tr></thead>
+          <tbody>
+            <tr><td>الإعدادات (اللغة والمظهر والأصوات ومواعيد التذكير)</td><td>التخزين الخاص بالتطبيق</td><td class="no">لا</td></tr>
+            <tr><td>تقدّم التعلّم (الدروس والنقاط والنجوم وأيام المذاكرة والإحصاءات)</td><td>التخزين الخاص بالتطبيق</td><td class="no">لا</td></tr>
+            <tr><td>الكلمات المحفوظة وقوائم المراجعة والأخطاء وآخر عمليات البحث في القاموس</td><td>التخزين الخاص بالتطبيق</td><td class="no">لا</td></tr>
+            <tr><td>سجل مسح عدسة سندس: نسخة من الصورة الممسوحة والنص المعروف لآخر 30 عملية مسح (وتُحذف الأقدم تلقائيًا)</td><td>التخزين الخاص بالتطبيق</td><td class="no">لا</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>لا تستطيع التطبيقات الأخرى قراءة هذا التخزين، ولا توجد لدينا خوادم تستقبله. وعند حذف التطبيق أو مسح بياناته من إعدادات الهاتف تُزال هذه المعلومات نهائيًا ولا يمكننا استرجاعها.</p>
+    </section>
+
+    <section id="ar-s2">
+      <h2>2. الكاميرا والصور وعدسة سندس</h2>
+      <p>تستخدم عدسة سندس الكاميرا، أو صورة تختارها من المعرض، لمسح نص صيني. ويُطلب إذن الكاميرا عند فتح الماسح فقط. وعند اختيار صورة من المعرض يقرأ التطبيق هذه الصورة وحدها، ولا يطلب الوصول إلى بقية صورك.</p>
+      <p>يجري التعرّف على النص داخل جهازك بواسطة Google ML Kit، ولا تُرسل الصورة إلينا. نرجو ألا تمسح مستندات أو صورًا تحتوي معلومات شخصية أو حساسة تخصّك أو تخصّ غيرك.</p>
+    </section>
+
+    <section id="ar-s3">
+      <h2>3. الإشعارات وإعادة التشغيل</h2>
+      <p>تذكيرات المذاكرة اختيارية، وتُجدول على جهازك ولا تأتي من خادم. ويُطلب إذن الإشعارات عند تفعيل تذكير فقط. ويستخدم التطبيق إشارة إعادة تشغيل الهاتف لإعادة جدولة التذكير بعد التشغيل ليس إلا.</p>
+      <p>لا يستخدم التطبيق الميكروفون ولا يسجّل صوتًا، ولا يصل إلى موقعك أو جهات اتصالك أو رسائلك.</p>
+    </section>
+
+    <section id="ar-s4">
+      <h2>4. معلومات تغادر جهازك</h2>
+      <p>أغلب التطبيق يعمل دون إنترنت. وهذه هي الحالات الوحيدة التي يصل فيها شيء إلى خدمة خارجية:</p>
+      <div class="tablewrap">
+        <table>
+          <thead><tr><th>الخدمة</th><th>متى</th><th>ما قد تستقبله</th></tr></thead>
+          <tbody>
+            <tr>
+              <td>Google ML Kit (التعرّف على النص في عدسة سندس)</td>
+              <td>عند استخدام الماسح</td>
+              <td>وفق توثيق Google، قد ترسل المكتبة إلى Google بيانات تقنية للتشخيص وتحليلات الاستخدام، مثل معلومات الجهاز (الشركة المصنّعة والطراز وإصدار النظام) واسم حزمة التطبيق وإصداره ومقاييس الأداء ورموز الأخطاء. وتذكر Google أنها تُشفَّر أثناء النقل ولا تُنقل إلى أطراف ثالثة، ولا يذكر توثيقها صورك الممسوحة ولا النص المعروف ضمن البيانات المجموعة. نحن لا نستقبل هذه البيانات.</td>
+            </tr>
+            <tr>
+              <td>jsDelivr (شبكة توصيل محتوى عامة)</td>
+              <td>عند فتح تدريب كتابة الحروف</td>
+              <td>كأي طلب عبر الإنترنت، قد ترى الخدمة عنوان IP ونوع جهازك. ولا يرسل التطبيق إليها شيئًا عن تقدّمك أو صورك أو كلماتك المحفوظة.</td>
+            </tr>
+            <tr>
+              <td>تقارير الأعطال من Google Play وAndroid</td>
+              <td>فقط إذا اخترت على جهازك مشاركة بيانات الاستخدام والتشخيص</td>
+              <td>قد تتاح لنا تقارير أعطال مجهولة الهوية عبر Google Play Console.</td>
+            </tr>
+            <tr>
+              <td>محرّك النطق (تحويل النص إلى كلام)</td>
+              <td>عند الاستماع إلى النطق</td>
+              <td>يستخدم التطبيق المحرّك المثبّت على هاتفك، وتسري عليه سياسة الشركة المصنّعة له.</td>
+            </tr>
+            <tr>
+              <td>واتساب وInstagram وTikTok وFacebook وBehance</td>
+              <td>عند الضغط على روابطها (ومنها زر الاستفسار عن الكتب)</td>
+              <td>يفتح التطبيق الخدمة خارجه، وتسري شروطها وسياسة خصوصيتها على ما تفعله هناك، ومنه أي رسالة ترسلها.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p>نحن لا نبيع معلوماتك الشخصية ولا نشاركها لأغراض إعلانية. ولمزيد من التفاصيل عن ML Kit راجع <a href="https://developers.google.com/ml-kit/android-data-disclosure" rel="noopener noreferrer">صفحة Google عن بيانات ML Kit</a>.</p>
+    </section>
+
+    <section id="ar-s5">
+      <h2>5. ما لا يفعله SINOUS</h2>
+      <ul class="plain">
+        <li>لا يطلب اسمك ولا بريدك الإلكتروني ولا رقم هاتفك ولا عمرك.</li>
+        <li>لا يعرض إعلانات ولا يستخدم أدوات إعلانية أو تحليلية خاصة بنا.</li>
+        <li>لا يتتبّعك عبر التطبيقات أو المواقع الأخرى، ولا يبني ملفًا عنك.</li>
+        <li>لا يبيع البيانات.</li>
+      </ul>
+    </section>
+
+    <section id="ar-s6">
+      <h2>6. خياراتك وحذف البيانات</h2>
+      <p>من الإعدادات › مركز الخصوصية يمكنك حذف سجل المسح، أو آخر عمليات البحث، أو الكلمات المحفوظة وقوائم الأخطاء، أو كل بيانات التعلّم المحفوظة في التطبيق (مع بقاء إعدادات اللغة والمظهر والتذكير). ويمكنك إيقاف التذكيرات من الإعدادات، وسحب إذن الكاميرا أو الإشعارات في أي وقت من إعدادات هاتفك، أو حذف التطبيق.</p>
+      <p>وبما أن بياناتك ليست عندنا، فلا نستطيع الاطلاع عليها أو تعديلها أو حذفها نيابةً عنك؛ فهذه الأدوات تعمل مباشرة على البيانات الموجودة على هاتفك. وهذا الإصدار بلا تسجيل دخول وبلا مزامنة بين الأجهزة.</p>
+    </section>
+
+    <section id="ar-s7">
+      <h2>7. الأطفال</h2>
+      <p>SINOUS غير موجّه للأطفال دون 13 سنة، ولا يجمع عن قصد معلومات شخصية من أي مستخدم. وإن ظننت أن طفلًا دون 13 سنة يستخدم التطبيق فتواصل معنا.</p>
+    </section>
+
+    <section id="ar-s8">
+      <h2>8. الأمان</h2>
+      <p>تُحفظ بيانات التطبيق في تخزين خاص به، وتُستثنى من النسخ الاحتياطي التلقائي في Android. وتجري اتصالات التطبيق بالإنترنت عبر HTTPS المشفّر، والاتصال غير المشفّر معطّل. ولا يوجد نظام آمن تمامًا، لذلك ننصحك بقفل هاتفك.</p>
+    </section>
+
+    <section id="ar-s9">
+      <h2>9. تعديل هذه السياسة</h2>
+      <p>قد نحدّث هذه السياسة عند تغيّر ميزات التطبيق أو طريقة تعامله مع البيانات. وسنعدّل تاريخ «آخر تحديث» في أعلى هذه الصفحة، ونعكس التغييرات الجوهرية في مركز الخصوصية داخل التطبيق.</p>
+    </section>
+
+    <section id="ar-s10">
+      <h2>10. التواصل</h2>
+      <p>لأي سؤال عن الخصوصية، تواصل معنا عبر الروابط التالية، وهي نفسها المعروضة في صفحة الإعدادات داخل التطبيق.</p>
+      <ul class="plain">
+        <li>المطوّر عصام محمد:
+          <a href="https://wa.me/201055062124" rel="noopener noreferrer">واتساب</a>،
+          <a href="https://www.instagram.com/nsessammohamed/" rel="noopener noreferrer">Instagram</a>،
+          <a href="https://www.facebook.com/NSEsamMohamed/" rel="noopener noreferrer">Facebook</a>،
+          <a href="https://www.behance.net/NSEssamMohamed" rel="noopener noreferrer">Behance</a></li>
+        <li>د. سندس ياسر:
+          <a href="https://www.instagram.com/sinous_chinese/" rel="noopener noreferrer">Instagram (‎@sinous_chinese)</a>،
+          <a href="https://www.tiktok.com/@sinous_chinese" rel="noopener noreferrer">TikTok</a></li>
+      </ul>
+      <p>لا ترسل كلمات مرور أو بيانات حساسة عبر وسائل التواصل الاجتماعي.</p>
+    </section>
+
+    <footer>SINOUS، الإصدار 1.0. آخر تحديث: 9 نوفمبر 2026.</footer>
+  </div>
+</main>
+
+<script>
+(function () {
+  var root = document.documentElement;
+  root.className = root.className.replace('no-js', 'js');
+  var titles = { en: 'Privacy Policy — SINOUS', ar: 'سياسة الخصوصية — SINOUS' };
+  var buttons = document.querySelectorAll('.toggle button');
+  function setLang(l) {
+    root.setAttribute('data-lang', l);
+    root.setAttribute('lang', l);
+    document.title = titles[l];
+    for (var i = 0; i < buttons.length; i++) {
+      buttons[i].setAttribute('aria-pressed', buttons[i].getAttribute('data-set') === l ? 'true' : 'false');
+    }
+  }
+  var wanted = '';
+  try { wanted = new URLSearchParams(location.search).get('lang') || ''; } catch (e) {}
+  if (wanted !== 'ar' && wanted !== 'en') {
+    wanted = ((navigator.language || 'en').toLowerCase().indexOf('ar') === 0) ? 'ar' : 'en';
+  }
+  setLang(wanted);
+  for (var j = 0; j < buttons.length; j++) {
+    buttons[j].addEventListener('click', function () { setLang(this.getAttribute('data-set')); window.scrollTo(0, 0); });
+  }
+})();
+</script>
+</body>
+</html>
